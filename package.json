@@ -1,0 +1,79 @@
+{
+  "name": "wintermelon",
+  "title": "Wintermelon",
+  "id": "jid1-YXWtuaWA4A6MUQ",
+  "description": "Implements the title text of XKCD #862.",
+  "author": "Evan Chen",
+  "license": "MPL 2.0",
+  "version": "0.1",
+
+  "preferences": [
+
+  { "name": "regex1",
+	"title": "RegEx 1",
+	"type": "string",
+	"value": "^https?://mail.google.com/mail/*"
+  },
+  { "name": "time1",
+	"title": "Lock Time 1",
+	"type": "integer",
+	"value": 30
+  },
+
+  { "name": "regex2",
+	"title": "RegEx 2",
+	"type": "string",
+	"value": "^https?://www.artofproblemsolving.com/*"
+  },
+  { "name": "time2",
+	"title": "Lock Time 2",
+	"type": "integer",
+	"value": 40
+  },
+
+  { "name": "regex3",
+	"title": "RegEx 3",
+	"type": "string",
+	"value": "^https?://www.facebook.com/*"
+  },
+  { "name": "time3",
+	"title": "Lock Time 3",
+	"type": "integer",
+	"value": 50
+  },
+
+  { "name": "regex4",
+	"title": "RegEx 4",
+	"type": "string",
+	"value": "^https?://www.quora.com/*"
+  },
+  { "name": "time4",
+	"title": "Lock Time 4",
+	"type": "integer",
+	"value": 70
+  },
+
+  { "name": "regex5",
+	"title": "RegEx 5",
+	"type": "string",
+	"value": ""
+  },
+  { "name": "time5",
+	"title": "Lock Time 5",
+	"type": "integer",
+	"value": 0
+  },
+
+  { "name": "regex6",
+	"title": "RegEx 6",
+	"type": "string",
+	"value": ""
+  },
+  { "name": "time6",
+	"title": "Lock Time 6",
+	"type": "integer",
+	"value": 0
+  }
+
+  ]
+}
