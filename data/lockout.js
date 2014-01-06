@@ -1,18 +1,19 @@
-function lock(time) {
+function lock_page(time) {
 	document.getElementsByTagName("body")[0].style.visibility = "hidden";
 	if (time >= 0) {
 		window.alert("Locking for " + time + " seconds.");
-		window.setTimeout(unlock, time * 1000);
+		window.setTimeout(unlock_page, time * 1000);
+		self.port.emit("start_lockdown");
 	}
 	else {
 		window.alert("Locking indefinitely.");
 	}
 }
 
-function unlock() {
+function unlock_page() {
 	window.alert("Done");
 	document.getElementsByTagName("body")[0].style.visibility = "visible";
-	self.port.emit("unlock");
+	self.port.emit("stop_lockdown");
 }
 
-self.port.on("lock", lock);
+self.port.on("lock_page", lock_page);
